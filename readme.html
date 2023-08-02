@@ -1,0 +1,15 @@
+Here is some sample code I've written using Python! 
+
+The first example is a Python script that was used at my time with CDW. When the code is running, it 
+takes in all active tickets from ServiceNow, checks if any tickets need data collected or have the 
+capability to be closed/escalated by the script, then goes through each ticket to collect data and 
+determine the future state of the ticket. As well, the script uses a dict to take information from 
+the ServiceNow ticket and execute the proper function. For improvements, the following may be beneficial:
+ - set up a maximum limit that a ticket is closed before it is immediately escalated (prevents an infinite
+   cycle of tickets getting opened, then being forcefully closed)
+ - convert the dict to an HTML file that can be viewed and edited simpler, rather than using a dict or 
+   YAML file
+
+The second example is my attempt at creating a JSON parser from scratch. Given a .txt file it will output
+the size of the each object and list, the type of each item, and the values of each item. This is still 
+in a work in progress.
